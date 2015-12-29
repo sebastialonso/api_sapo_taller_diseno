@@ -8,7 +8,7 @@ module Api
           if @user.nil?
             facebook_data = view_context.authorized(user_params[:token])
             if facebook_data["id"] == user_params[:face_id]
-              user = User.new(email: user_params([:email]), name: facebook_data["first_name"] + facebook_data["last_name"])
+              user = User.new(email: user_params[:email], name: facebook_data["name"])
               if user.save
                 render json: user.to_json, status: :created
               else
