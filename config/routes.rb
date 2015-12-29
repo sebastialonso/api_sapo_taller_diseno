@@ -5,7 +5,7 @@ Rails.application.routes.draw do
         collection do
           match '/sessions' => 'users/sessions#create', via: :post
         end
-        resources :sightings, path: 'sapeadas', only: [:index]
+        resources :sightings, path: 'sapeadas', controller: 'users/sightings', only: [:index]
       end
       resources :sightings, path: 'sapeadas', only: [:create]
       resources :predictions, path: 'prediccion', only: [:index]
