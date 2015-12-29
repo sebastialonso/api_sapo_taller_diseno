@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lat: 9.99
+  lon: 9.99
+  time: 1
+  direction: false
+  bus_id: 1
+  user_id: 1
+
+two:
+  lat: 9.99
+  lon: 9.99
+  time: 1
+  direction: false
+  bus_id: 1
+  user_id: 1
